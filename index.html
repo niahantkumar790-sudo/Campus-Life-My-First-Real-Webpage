@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life | My First Real Webpage</title>
+</head>
+<body bgcolor="#eaf4ff">
+
+<div align="center">
+  <header>
+    <h1><font color="#003366">🎓 Welcome to Campus Life</font></h1>
+    <h3><font color="#555555">Lovely Professional University &mdash; Hostel Fest Special</font></h3>
+  </header>
+</div>
+
+<hr size="4" color="#003366">
+
+<div>
+  <nav>
+    <center>
+      <a href="#about">About</a> |
+      <a href="#highlights">Highlights</a> |
+      <a href="#steps">Join a Hostel</a> |
+      <a href="#gallery">Gallery</a> |
+      <a href="#map">Map</a> |
+      <a href="#register">Register</a>
+    </center>
+  </nav>
+</div>
+
+<hr>
+
+<div id="about">
+  <center><h2>About This Page</h2></center>
+  <p>This is a page about hostel life at <abbr title="Lovely Professional University">LPU</abbr>.
+  The hostel is organizing a fest, and the details are as follows:</p>
+  <p>It has photos, a video, and useful links.</p>
+
+  <blockquote cite="https://www.lpu.in">
+    College life is the best years of a student's life.
+  </blockquote>
+</div>
+
+<hr>
+
+<div>
+  <h2>Some Important Text</h2>
+  <p>
+    <strong>This part is bold and important.</strong>
+    <br>
+    <em>This part is in italics.</em>
+    <br>
+    <mark>This part is highlighted using the mark tag.</mark>
+  </p>
+</div>
+
+<hr>
+
+<div id="highlights" bgcolor="#eaf4ff">
+  <h2>Top Hostel Highlights</h2>
+  <ul type="disc">
+    <li>Closest hostel to the main academic block</li>
+    <li>Best common room for movie nights</li>
+    <li>Quietest hostel for studying</li>
+  </ul>
+</div>
+
+<hr>
+
+<div id="steps">
+  <h2>Steps to Join a Hostel</h2>
+  <ol type="1" start="1">
+    <li>Fill the hostel form</li>
+    <li>Pay the fee</li>
+    <li>Collect your room key</li>
+  </ol>
+</div>
+
+<hr>
+
+<div>
+  <h2>Fest Schedule (click to expand)</h2>
+  <details>
+    <summary>Day 1 — Inauguration</summary>
+    <p>Lamp lighting, welcome address, and cultural performances at the main auditorium.</p>
+  </details>
+  <details>
+    <summary>Day 2 — Sports & Games</summary>
+    <p>Inter-hostel sports tournament followed by an evening bonfire.</p>
+  </details>
+  <details>
+    <summary>Day 3 — Grand Finale</summary>
+    <p>DJ night, prize distribution, and closing ceremony.</p>
+  </details>
+</div>
+
+<hr>
+
+<div>
+  <h2>A Link</h2>
+  <p>
+    <a href="https://www.lpu.in" target="_blank" rel="noopener">
+      Click here to see all listings</a>
+  </p>
+</div>
+
+<hr>
+
+<div id="gallery" align="center">
+  <h2>A Picture</h2>
+  <figure>
+    <img src="https://picsum.photos/400/250"
+         alt="Students relaxing on the campus lawn"
+         width="400" height="250" loading="lazy">
+    <figcaption>Students relaxing on the campus lawn</figcaption>
+  </figure>
+
+  <h2>A Video</h2>
+  <figure>
+    <video controls width="400" poster="https://picsum.photos/400/225"
+           preload="metadata" loop>
+      Your browser does not support the video tag.
+    </video>
+    <figcaption>Highlights from last year's fest</figcaption>
+  </figure>
+
+  <h2>Some Audio</h2>
+  <audio controls preload="metadata" loop>
+    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+     type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+</div>
+
+<hr>
+
+<div id="map">
+  <h2>A Map</h2>
+  <iframe
+    title="Campus location map"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=75.695%2C31.245%2C75.715%2C31.260&layer=mapnik"
+    width="400" height="300" loading="lazy">
+  </iframe>
+</div>
+
+<hr>
+
+<div align="center">
+  <h2>Fest Committee</h2>
+  <table border="1" cellpadding="8" cellspacing="0" bgcolor="#ffffff">
+    <caption><b>Contact List</b></caption>
+    <thead bgcolor="#003366">
+      <tr>
+        <th><font color="#ffffff">Name</font></th>
+        <th><font color="#ffffff">Age</font></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>nishant</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>kamal badhala</td>
+        <td>18</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<div id="register" align="center">
+  <h2>Register for the Fest</h2>
+  <form action="submit-page.html" method="GET">
+    <fieldset>
+      <legend>Student Details</legend>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="description">Description</label>
+      <input type="text" id="description" name="description"><br><br>
+
+      <label for="hostel">Hostel</label>
+      <select id="hostel" name="hostel">
+        <option value="boys-1">Boys Hostel 1</option>
+        <option value="boys-2">Boys Hostel 2</option>
+        <option value="girls-1">Girls Hostel 1</option>
+      </select><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="4" cols="30" placeholder="Your message">Default text here</textarea><br><br>
+
+      <input type="checkbox" id="agree" name="agree" value="yes">
+      <label for="agree">I agree to the fest rules</label><br><br>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<hr size="4" color="#003366">
+
+<div align="center">
+  <footer>
+    <address>
+      LPU Hostel Fest Committee &mdash; Phagwara, Punjab &mdash;
+      <a href="mailto:hostelfest@lpu.in">hostelfest@lpu.in</a>
+    </address>
+  </footer>
+</div>
+
+</body>
+</html>
